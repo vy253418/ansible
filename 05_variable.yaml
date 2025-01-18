@@ -4,7 +4,7 @@
   vars:
     maga: veera
     course: Devops
-     from whom: siva
+     "from whom": siva
   tasks:
    - name: print the variable
      ansible.builtin.debug:
