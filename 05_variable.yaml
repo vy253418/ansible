@@ -1,0 +1,8 @@
+- name: variable
+  hosts: local
+  connections: local
+  tasks:
+   - name: print the variable
+     ansible.builtin.debug:
+      msg: "veera is learing devops with aws from siva trianing"
+     
