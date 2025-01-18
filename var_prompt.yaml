@@ -9,6 +9,6 @@
   tasks:
   - name: pront normal
     ansible.builtin.debug:
-    msg: "course{{Course}},duration is {{Duration}}"
+    msg: "course{{Course}},duration is {{Duration}},"
        
   
