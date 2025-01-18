@@ -4,9 +4,9 @@
   vars:
     maga: veera
     course: Devops
-     "from whom": siva
+    whom: siva
   tasks:
    - name: print the variable
      ansible.builtin.debug:
-      msg: "{{maga}} is learing {{course}} with aws from {{from whom}}" trianing"
+      msg: "{{maga}}, is learing {{course}}, with aws from {{whom}} trianing"
      
