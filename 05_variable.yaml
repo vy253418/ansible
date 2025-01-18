@@ -1,8 +1,12 @@
 - name: variable
   hosts: local
   connection: local
+  vars:
+    maga: veera
+    course: Devops
+     from whom: siva
   tasks:
    - name: print the variable
      ansible.builtin.debug:
-      msg: "veera is learing devops with aws from siva trianing"
+      msg: "{{maga}} is learing {{course}} with aws from {{from whom}}" trianing"
      
