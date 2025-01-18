@@ -3,12 +3,12 @@
   connection: local
   vars_prompt:
    - name: Course
-     prompt: pleaes enter your couse name
+     prompt: "pleaes enter your couse name"
    - name: Duration
-     prompt: please enter you duratoin time
+     prompt: "please enter you duratoin time"
   tasks:
-  - name: pront normal
-    ansible.builtin.debug:
-    msg: "course{{Course}},duration is {{Duration}},"
+   - name: pront normal
+     ansible.builtin.debug:
+       msg: "course{{Course}},duration is {{Duration}},"
        
   
