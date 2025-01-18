@@ -2,10 +2,10 @@
  hosts: local
  connection: local
  vars_prompt:
- - name: Course
-   prompt: pleaes enter your couse name
- - name: Duration
-   prompt: please enter you duratoin time
+  - name: Course
+    prompt: pleaes enter your couse name
+  - name: Duration
+    prompt: please enter you duratoin time
  tasks:
   -name: pront normal
    ansible.builtin.debug:
