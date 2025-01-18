@@ -3,7 +3,7 @@
   connection: local # manageing its own node no need of crditinials
   tasks: 
   - name: PLAY1 and TASK1
-    ansible.bulitin.debut:
+    ansible.bulitin.debug:
       msg: "Hello PLAY1 and TASK1" 
 
   - name: PLAY2
@@ -11,5 +11,5 @@
     connection: local # manageing its own node no need of crditinials
     tasks: 
      - name: PLAY2 and TASK2
-       ansible.bulitin.debut:
+       ansible.bulitin.debug:
           msg: "Hello PLAY2 and TASK2"     
