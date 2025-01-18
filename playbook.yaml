@@ -1,4 +1,4 @@
--  name: PING 
+- name: PING 
 hosts: web
 task: #task=module=collection
  -  name: ping the server 
