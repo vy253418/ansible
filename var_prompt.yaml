@@ -6,9 +6,9 @@
      prompt: pleaes enter your couse name
    - name: Duration
      prompt: please enter you duratoin time
- tasks:
+  tasks:
   - name: pront normal
     ansible.builtin.debug:
-    msg: "course{{Course}}",duration is {{Duration}}""
+    msg: "course{{Course}},duration is {{Duration}}"
        
   
