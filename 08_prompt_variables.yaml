@@ -4,7 +4,7 @@
   vars_prompt:
     - name: COURSE
       prompt: please entirer your course name
-      privte: false
+      private: false
     - name: DURATION
       prompt: please entire your Duration time
     - name: TRIANIER
