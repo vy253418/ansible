@@ -9,11 +9,11 @@
     - aws
     - ansible
     - aws
-  live: true   # boolen
-  tools:  # map
-    ci: jenkins
-    cloud: aws
-    contianter: docker
+    live: true   # boolen
+    tools:  # map
+      ci: jenkins
+      cloud: aws
+      contianter: docker
   tasks:
     -name: print course name
     ansible.builtin.debug:
