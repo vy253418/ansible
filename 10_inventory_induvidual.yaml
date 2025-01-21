@@ -1,6 +1,5 @@
 - name: useing inventory 
   hosts: web
-  connection: local
   tasks:
    - name: using variables from inventory file
      ansible.builtin.debug:
