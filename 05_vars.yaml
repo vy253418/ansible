@@ -1,0 +1,11 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "DEVOPS WITH AWS"
+    DURATION: 120hrs
+    TRIANIER: Sivakumar 
+  -name: print the variable
+   ansibel.builtin.debug:
+     msg: "We are learing "{{COURSE}}" Duration period is "{{DURATION}}" Trianier is "{{TRIANIER}}"
+
