@@ -1,10 +1,10 @@
 - name: this is ping test 
   hosts: web
-  tasks: 
+  types: 
     - apple
     - mangoe
     - jangri
-    
+
       
 
 
