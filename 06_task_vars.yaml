@@ -11,8 +11,8 @@
         COURSE: Ansible
       ansible.builtin.debug:
         msg: "We are learing {{COURSE}} Duration period is {{DURATION}} Trianier is {{TRIANIER}}"
-
-     - name: print the variable
-       ansible.builtin.debug:
+    
+    - name: print the variable
+      ansible.builtin.debug:
         msg: "We are learing {{COURSE}} Duration period is {{DURATION}} Trianier is {{TRIANIER}}"   
 
