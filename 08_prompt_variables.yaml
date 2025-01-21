@@ -1,0 +1,15 @@
+- name: useing the var_filesn
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: COURSE
+      Promt: please entirer your course name
+    - name: DURATION
+      prompt: please entire your Duration time
+    - name: TRIANIER
+      prompt: please enter trianer name
+  tasks:
+    - name: copy the vaiable from vars_file
+      ansible.builtin.debug:
+        msg: "We are learing {{COURSE}} Duration period is {{DURATION}} Trianier is {{TRIANIER}}"
+    
