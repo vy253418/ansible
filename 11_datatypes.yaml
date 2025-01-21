@@ -17,4 +17,4 @@
   tasks:
     - name: print course name
       ansible.builtin.debug:
-        msg: "Hi team {{cousename}}, is avilable now period is {{duriation}}, and {{topics}}, you can learn {{tools}}" 
+        msg: "Hi team {{coursename}}, is avilable now period is {{duriation}}, and {{topics}}, you can learn {{tools}}" 
