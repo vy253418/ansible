@@ -1,7 +1,7 @@
 - name: useing the var_files
   hosts: local
   connection: local
-  task:
+  tasks:
     - name: copy the vaiable from vars_file
       ansible.builtin.debug:
         msg: "We are learing {{COURSE}} Duration period is {{DURATION}} Trianier is {{TRIANIER}}"
