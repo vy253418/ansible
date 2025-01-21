@@ -4,4 +4,4 @@
   tasks:
    - name: using variables from inventory file
      ansible.builtin.debug:
-       msg: "We are learing {{COURSE}} Duration period is {{DURATION}} Trianier is {{TRIANIER}}"
+       msg: "We are learing {{COURSE}}, Duration period is {{DURATION}}, Trianier is {{TRIANIER}}"
