@@ -1,6 +1,8 @@
 - name: useing the var_files
   hosts: local
   connection: local
+  vars_files:
+    - course.yaml
   tasks:
     - name: copy the vaiable from vars_file
       ansible.builtin.debug:
