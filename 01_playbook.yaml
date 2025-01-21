@@ -1,10 +1,5 @@
-- name: this is ping test 
+- name: this is ping test
   hosts: web
-  types: 
-    - apple
-    - mangoe
-    - jangri
-
-      
-
-
+  tasks:
+    - name: ping the server 
+      ansible.builtin.ping:
