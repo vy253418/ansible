@@ -8,5 +8,5 @@
   tasks:
     -name: print the variable
      ansible.builtin.debug:
-       msg: "We are learing "{{COURSE}}" Duration period is "{{DURATION}}" Trianier is "{{TRIANIER}}"
+       msg: "We are learing {{COURSE}} Duration period is {{DURATION}} Trianier is {{TRIANIER}}"
 
