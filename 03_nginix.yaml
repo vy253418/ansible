@@ -4,6 +4,6 @@
   tasks: 
     - name: it is undertask nginix
       ansible.builtin.package:
-      name: nginx
-      state: present
-      
+        name: nginx
+        state: present
+
