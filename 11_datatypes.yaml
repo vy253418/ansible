@@ -15,6 +15,6 @@
       cloud: aws
       contianter: docker
   tasks:
-    -name: print course name
-    ansible.builtin.debug:
-    msg: "Hi team {{cousename}}" is avilable now period is {{duriation}} and {{topics}} you can learn {{tools}}"" 
+    - name: print course name
+      ansible.builtin.debug:
+      msg: "Hi team {{cousename}}" is avilable now period is {{duriation}} and {{topics}} you can learn {{tools}}"" 
