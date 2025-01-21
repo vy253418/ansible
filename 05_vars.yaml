@@ -7,6 +7,6 @@
     TRIANIER: Sivakumar 
   tasks:
     -name: print the variable
-     ansibel.builtin.debug:
+     ansible.builtin.debug:
        msg: "We are learing "{{COURSE}}" Duration period is "{{DURATION}}" Trianier is "{{TRIANIER}}"
 
