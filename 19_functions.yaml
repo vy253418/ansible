@@ -15,6 +15,14 @@
        duration: 10hrs
        trianier: sivakumar
     ansible.builtin.debug:
-      msg: "course info :{{ course |dict2items }}"   
-       
+      msg: "course info :{{ course |dict2items }}"
+
+   - name: convert list to map
+     vars:
+       course:
+       - {'key': 'name', 'value': 'ansible'}
+       - {'key': 'duration', 'value': '10hrs'}
+       - {'key': 'trianier', 'value': 'sivakumar'} 
+     ansible.builtin.debug:
+       msg: "couse info :{{ course | items2dict }}"     
        
