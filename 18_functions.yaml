@@ -6,3 +6,8 @@
     ansible.builtin.debug:
       msg: "Hello Goodmng {{ person | default('veera') }}"
 
+ - name: converting to string to list
+   vars:
+    - frutis: "apple, mango, bananna"
+    ansible.builtin.debug:
+      msg: "Fruits are {{ frutis }}""
