@@ -2,11 +2,18 @@
   hosts: local
   connection: local
   vars:
-    my_number: 15
+    my_number: 8
   tasks:
     - name: print if number greater then 10
       ansible.builtin.debug:
         msg: "Given number {{my_number}} is greater then 10"
       when: my_number > 10   
+
+  tasks: 
+    - name: print if number not greater 10
+      ansibile.builtin.debug:
+        msg: "pint if the number  {{my_number}}" not greater then 10
+      while: my_number < 10  
+
 
   
