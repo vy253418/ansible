@@ -4,7 +4,7 @@
   tasks:
     - name: print the fuit names
       ansible.builtin.debug:
-        msg: "pring the names {{item}}"
+        msg: "pring the names {{ item }}"
       loop
        - apple
        - mango
