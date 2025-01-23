@@ -1,0 +1,9 @@
+- name: filters
+  hosts: web
+  become: yes 
+  tasks:
+  - name: converting to string to list
+    vars:
+     frutis: " apple, mango, bananna "
+    ansible.builtin.debug:
+      msg: "Fruits are {{ frutis }}"
