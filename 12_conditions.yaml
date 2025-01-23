@@ -10,7 +10,7 @@
       when: my_number > 10   
 
     - name: print if number not greater 10
-      ansibile.builtin.debug:
+      ansible.builtin.debug:
         msg: "pint if the number {{my_number}} is not greater then 10"
       when: my_number <= 10  
 
