@@ -4,8 +4,8 @@
   tasks:
   - name: installing multiple packges throgh loops
     ansible.builtin.package
-       name: {{ item }}
-       state: present
+       name: "{{ item }}"
+       state: installed
   loop:
    - mysql
    - gcc
