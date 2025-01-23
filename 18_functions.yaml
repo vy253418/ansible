@@ -4,5 +4,5 @@
   tasks:
   - name: variable filetering
     ansible.builtin.debug:
-      msg: "Hello Goodmng {{ person | default'(veera)'}}"
+      msg: "Hello Goodmng {{ person | default'(veera)' }}"
 
