@@ -7,3 +7,14 @@
      frutis: " apple, mango, bananna "
     ansible.builtin.debug:
       msg: "Fruits are {{ frutis | split (',') }}"
+  
+  - name: convert  map into list
+    vars:
+      course:
+       name: ansible
+       duration: 10hrs
+       trianier: sivakumar
+    ansible.builtin.debug:
+      msg: "course info :{{ course |dict2items }}"   
+       
+       
