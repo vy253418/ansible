@@ -5,7 +5,7 @@
     - name: print the fuit names
       ansible.builtin.debug:
         msg: "pring the names {{ item }}"
-      loop
+      loop:
        - apple
        - mango
        - jamakaya
