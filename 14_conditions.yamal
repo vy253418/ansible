@@ -5,6 +5,6 @@
     - name: installing Nginx if it is Redhat
       ansible.builtin.dnf:
         name: nginx
-        state: installed
+        state: present
         state: started
       when: ansible_os_family == "RedHat"
