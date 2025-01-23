@@ -6,4 +6,4 @@
     vars:
      frutis: " apple, mango, bananna "
     ansible.builtin.debug:
-      msg: "Fruits are {{ frutis }}"
+      msg: "Fruits are {{ frutis | split (',') }}"
