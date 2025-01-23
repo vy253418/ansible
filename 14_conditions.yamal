@@ -6,5 +6,5 @@
       ansible.builtin.dnf:
         name: nginx
         state: present
-        state: started
+        got: started
       when: ansible_os_family == "RedHat"
