@@ -1,0 +1,8 @@
+- name: filters
+  hosts: web
+  become: yes 
+  tasks:
+  - name: variable filetering
+    ansible.builtin.debug:
+      msg: "Hello veer {{ person }}"
+
