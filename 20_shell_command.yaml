@@ -8,4 +8,9 @@
   
   - name: using command module
     ansible.builtin.command: ls -ltr 
+    register: command_output
+
+   -name: print the output 
+    ansible.builtin.debug:
+      msg: "ping the {{ command_output }}" 
      
