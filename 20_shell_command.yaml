@@ -1,0 +1,6 @@
+- name: checking ansible command module
+  hosts: local
+  connection: local
+  tasks:
+  - name: using anisble command module
+    ansible.builtin.command: ls -ltr > /tmp/filesyststem.sh
