@@ -3,4 +3,4 @@
   connection: local
   tasks:
   - name: using anisble command module
-    ansible.builtin.command: ls -ltr > /tmp/filesyststem.sh
+    ansible.builtin.shell: ls -ltr > /tmp/filesyststem.txt
