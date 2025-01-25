@@ -7,7 +7,7 @@
     ansible.builtin.shell: ls -ltr > /tmp/filesyststem.txt
   
   - name: using command module
-    ansible.builtin.command: ls -ltr 
+    ansible.builtin.command: "df -h" 
     register: command_output
 
   - name: print the output 
