@@ -13,4 +13,12 @@
   - name: print the output 
     ansible.builtin.debug:
       msg: "ping the {{ command_output }}" 
+
+  - name: Check Disk Usage Example
+    hosts: local
+    tasks:
+    - name: Check disk space
+      ansible.builtin.shell: df -h
+      register: disk_usage
+      ignore_errors: true    
      
