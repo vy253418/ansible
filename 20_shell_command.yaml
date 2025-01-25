@@ -20,5 +20,5 @@
     - name: Check disk space
       ansible.builtin.shell: df -h
       register: disk_usage
-      ignore_errors: true    
+       
      
