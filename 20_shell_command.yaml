@@ -18,7 +18,7 @@
     hosts: local
     tasks:
     - name: Check disk space
-      ansible.builtin.shell: df -h
+      ansible.builtin.command: df -h
       register: disk_usage
        
      
