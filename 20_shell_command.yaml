@@ -9,16 +9,9 @@
   - name: using command module
     ansible.builtin.command: 'df -h' 
     register: command_output
-
   - name: print the output 
     ansible.builtin.debug:
       msg: "ping the {{ command_output }}" 
 
-  - name: Check Disk Usage Example
-    hosts: local
-    tasks:
-    - name: Check disk space
-      ansible.builtin.command: df -h
-      register: disk_usage
-       
+ 
      
